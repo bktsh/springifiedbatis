@@ -1,5 +1,6 @@
 package com.bktsh.practice.service;
 
+import com.bktsh.practice.AbstractTest;
 import com.bktsh.practice.domain.Todo;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,9 +15,7 @@ import static com.bktsh.practice.TestUtil.prettyString;
 /**
  * Created on 2017-Feb-16
  */
-@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:testApplicationContext.xml"})
-public class TodoServiceTest{
+public class TodoServiceTest extends AbstractTest {
 
     @Autowired
     private TodoService subject;

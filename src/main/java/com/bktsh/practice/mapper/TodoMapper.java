@@ -9,10 +9,10 @@ import java.util.List;
 
 /**
  * Created on 2017-Feb-16
+ * Using MyBatis XML Mapper files
  */
-//@Mapper
 public interface TodoMapper {
-//    Todo getTodoById(@Param("todoId") int id);
     Todo getTodoById(int id);
+
     List<Todo> getAll();
 }

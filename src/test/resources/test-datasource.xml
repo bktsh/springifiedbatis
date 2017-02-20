@@ -8,8 +8,8 @@
        http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd ">
 
     <jdbc:initialize-database data-source="dataSource">
-        <jdbc:script location="classpath:db/sql/create-db.sql"/>
-        <jdbc:script location="classpath:db/sql/insert-data.sql"/>
+        <jdbc:script location="classpath*:db/sql/create-db.sql"/>
+        <jdbc:script location="classpath*:db/sql/insert-data.sql"/>
     </jdbc:initialize-database>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
